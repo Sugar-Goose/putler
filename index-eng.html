@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20230711005331"
+    />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230711005331" />
+    <link rel="icon" href="files/favicon/favicon.ico" type="image/x-icon" />
+    <title></title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <div class="header__content-main">
+            <div class="burger header__burger">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div>
+            <div class="header__logo site-logo">
+              <img src="img/logo.png" alt="putler-logo" />
+            </div>
+            <div class="header__navigation">
+              <div class="header__buttons">
+                <button
+                  class="header__button button open-registration registration-button"
+                >
+                  Sign Up
+                </button>
+
+                <button
+                  class="header__button button button-thin open-registration login-button"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.1081 8C10.0405 7.99324 9.95946 7.99324 9.88513 8C8.27703 7.94588 7 6.62683 7 5.00338C7 3.34611 8.33784 2 10 2C11.6554 2 13 3.34611 13 5.00338C12.9932 6.62683 11.7162 7.94588 10.1081 8Z"
+                      stroke="#787878"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.59677 12.1142C3.46774 13.4294 3.46774 15.5726 5.59677 16.8797C8.01613 18.3734 11.9839 18.3734 14.4032 16.8797C16.5323 15.5645 16.5323 13.4213 14.4032 12.1142C11.9927 10.6286 8.02493 10.6286 5.59677 12.1142Z"
+                      stroke="#787878"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>Sign In</span>
+                </button>
+              </div>
+              <div class="header__controls">
+                <button
+                  class="header__control control header-messages-button open-chat"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 10.7803V14.7722C18 15.0317 17.99 15.2812 17.9599 15.5207C17.7297 18.2152 16.1377 19.5525 13.204 19.5525H12.8035C12.5532 19.5525 12.3129 19.6722 12.1627 19.8718L10.9612 21.4686C10.4305 22.1771 9.56946 22.1771 9.03879 21.4686L7.83728 19.8718C7.70712 19.7022 7.41677 19.5525 7.19649 19.5525H6.796C3.60201 19.5525 2 18.7641 2 14.7722V10.7803C2 7.85624 3.3517 6.26946 6.04506 6.03993C6.28536 6.00999 6.53567 6 6.796 6H13.204C16.398 6 18 7.59677 18 10.7803Z"
+                      stroke="#F4F4F4"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 6.95274V11.0886C22 14.1285 20.6449 15.7622 17.9448 16C17.9749 15.7518 17.9849 15.4934 17.9849 15.2245V11.0886C17.9849 7.79026 16.3789 6.13589 13.1769 6.13589H6.75282C6.49184 6.13589 6.2409 6.14624 6 6.17726C6.23087 3.39587 7.82685 2 10.7679 2H17.192C20.394 2 22 3.65437 22 6.95274Z"
+                      stroke="#F4F4F4"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.4955 13.5H13.5045"
+                      stroke="#F4F4F4"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.4955 13.5H10.5045"
+                      stroke="#F4F4F4"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.4955 13.5H6.5045"
+                      stroke="#F4F4F4"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="header__control control control-white header-card-item cart-button open-cart"
+                >
+                  <img src="img/shopping-bag.png" alt="" />
+                  <p>0</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__content-secondary"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__header menu-header">
+            <div class="menu-header__close menu-close">
+              <div class="menu-close__line"></div>
+              <div class="menu-close__line"></div>
+            </div>
+            <div class="menu-header__back menu-back d-none">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="menu-header__logo site-logo">
+              <img src="img/logo.png" alt="pulter-logo" />
+            </div>
+          </div>
+          <div class="mobile-menu__body menu-body">
+            <div class="menu-body-page1">
+              <a href="#" class="menu-body__item">Home</a>
+              <a class="menu-body__item open-wheeloffortune login-first"
+                >Wheel of Fortune</a
+              >
+              <a class="menu-body__item open-contests login-first">Contests</a>
+              <a class="menu-body__item dont-close-menu mobile-menu-next"
+                >Next</a
+              >
+            </div>
+            <div class="menu-body-page2 d-none">
+              <a
+                target="_blank"
+                href="/files/docs/confidencial.pdf"
+                class="menu-body__item dont-close-menu"
+                >Privacy Policy</a
+              >
+              <a
+                target="_blank"
+                href="/files/docs/oferta.pdf"
+                class="menu-body__item dont-close-menu"
+                >Offer Agreement</a
+              >
+              <a class="menu-body__item open-delivery-info"
+                >Delivery and Payment</a
+              >
+              <a class="menu-body__item open-exchange-and-return"
+                >Exchange and Returns</a
+              >
+              <a class="menu-body__item open-contacts">Contacts</a>
+            </div>
+          </div>
+
+          <div class="mobile-menu__footer menu-footer">
+            <!-- <div class="menu-footer__button menu-logout">
+              <img src="img/logout.svg" alt="" />
+              <p>Вийти</p>
+            </div> -->
+            <div class="menu-footer-row">
+              <div class="menu-partners"></div>
+              <div class="menu-footer__language navigation-language">
+                <div class="navigation-language__button active">
+                  <a href="index.html">Укр</a>
+                </div>
+                <div class="navigation-language__border"></div>
+                <div class="navigation-language__button">
+                  <a href="index-eng.html">Eng</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="registration">
+      <div class="registration__container">
+        <div class="registration__content">
+          <div class="registration__header reg-header">
+            <div class="reg-header__close reg-close">
+              <div class="reg-close__line"></div>
+              <div class="reg-close__line"></div>
+            </div>
+          </div>
+          <div class="registration__body">
+            <form action="" class="registration-form">
+              <div class="registration-form__header form-header">
+                <div class="form-header__buttons">
+                  <div class="form-header__button registration-button active">
+                    Sign Up
+                  </div>
+                  <div class="form-header__button login-button">Sign In</div>
+                </div>
+                <div class="form-header__indicator indicator-form">
+                  <div class="indicator-form__line"></div>
+                </div>
+              </div>
+              <div class="registration-form__body form-body">
+                <div class="form-body-registration">
+                  <p class="form-body__text">
+                    If this is your first time here, then when you enter data,
+                    you will create a new one Account
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="Your email"
+                    class="form-body__input email-input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Your password"
+                    class="form-body__input password-input"
+                  />
+                  <button class="form-body__button registration-button">
+                    SIGN UP
+                  </button>
+                </div>
+                <div class="form-body-login hidden">
+                  <p class="form-body__text">
+                    If you already have an account, log in
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="Your email"
+                    class="form-body__input email-input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Your password"
+                    class="form-body__input password-input"
+                  />
+                  <button class="form-body__button login-button">
+                    Sign In
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert">
+      <div class="alert__container">
+        <div class="alert__content">
+          <div class="alert__header alert-header">
+            <div class="alert__logo site-logo">
+              <img src="img/logo.png" alt="" />
+            </div>
+          </div>
+          <div class="alert__body">
+            <div class="alert__form form-alert">
+              <h2 class="form-alert__title">Alert</h2>
+              <p class="form-alert__description">
+                We will not convince you to buy our product.
+              </p>
+              <p class="form-alert__text">
+                Let's not assure you of its merits. We have no right to do so
+                do.
+              </p>
+              <p class="form-alert__text">
+                <span
+                  >Our philosophy is to be ourselves and listen only
+                  to ourselves!</span
+                >
+              </p>
+              <p class="form-alert__text">
+                Therefore, we will simply give you the opportunity to feel and
+                listen to yourself
+                <span>;)</span>
+              </p>
+              <h3 class="form-alert__tagline">
+                <span>Feel,</span> not understand
+              </h3>
+              <button class="form-alert__button">
+                <img src="img/heart.png" alt="" />
+                <p>feel</p>
+              </button>
+            </div>
+            <div class="alert-languange navigation-language">
+              <div class="navigation-language__button">
+                <a href="index.html">Укр</a>
+              </div>
+              <div class="navigation-language__border"></div>
+              <div class="navigation-language__button active">
+                <a href="index-eng.html">Eng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contests">
+      <div class="contests__container">
+        <div class="contests__content">
+          <div class="contests__header">
+            <div class="contests__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="contests__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="contests__main">
+            <form action="" class="contests__form contests-form">
+              <!-- <h2 class="contests-form__title">Конкурси</h2>
+          <p class="contests-form__descr">Короткий опис, якщо такий потрібен</p>
+          <div class="contests-form__input-view">
+            <img src="img/gallery.png" alt="" />
+            <p>
+              Завантажте Ваш Макет у форматі <span> .JPEG</span> або
+              <span>.PNG</span>
+            </p>
+          </div>
+          <div class="contests-form__information">
+            <img src="img/timer.png" alt="" />
+            <h3><span> 10 червня </span>2023 <span> о 15:30</span> по Києву</h3>
+            <p>Ми надішлимо вам нагадування на Email</p>
+          </div>
+          <div class="contests-form__button">
+            <label for="contests-button">
+              <img src="img/instagram-dark.png" alt="" />
+              <p>Завантажити</p>
+            </label>
+            <input type="file" accept="image/*" id="contests-button" multiple />
+          </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="replenishment">
+      <div class="replenishment__container">
+        <div class="replenishment__content">
+          <div class="replenishment__header">
+            <div class="replenishment__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="replenishment__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="replenishment__body">
+            <div class="replenishment__form replenishment-form">
+              <h3 class="replenishment-form__title">Balance replenishment</h3>
+              <p class="replenishment-form__text">
+                <b>TP</b> will be credited to your account within several
+                minutes!
+              </p>
+              <div
+                class="replenishment-form__controlls replenishment-controlls"
+              >
+                <div
+                  class="replenishment-controlls__button replenishment-controlls__button-less"
+                >
+                  <img src="img/button-less.png" alt="" />
+                </div>
+                <div class="replenishment-controlls__montor">
+                  <div class="">88888</div>
+                  <p>TP</p>
+                </div>
+                <div
+                  class="replenishment-controlls__button replenishment-controlls__button-more"
+                >
+                  <img src="img/button-more.png" alt="" />
+                </div>
+              </div>
+              <div class="replenishment-form__information">1 TP = 1 UAH</div>
+
+              <div class="replenishment-form__button-wrapper">
+                <button class="replenishment-form__button">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart">
+      <div class="cart__container">
+        <div class="cart__content">
+          <div class="cart__header">
+            <div class="cart__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="cart__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="cart__body">
+            <div class="cart__form cart-form">
+              <div class="cart-form__header">
+                <h3 class="cart-form__title">Cart</h3>
+                <div class="cart-form__el-count">
+                  <span>0</span>
+                  <p>goods</p>
+                </div>
+              </div>
+              <div class="cart-form__main cart-elements"></div>
+              <div class="cart-form__footer">
+                <div class="cart-form__code">
+                  <input placeholder="Enter gift code" type="text" />
+                  <button class="">Use</button>
+                </div>
+                <div class="cart-form__full-price full-price">
+                  <p>Total payable</p>
+                  <div class="full-price__price price">
+                    <div class="price__uah">0 ТР</div>
+                    <div class="price__slash">/</div>
+                    <div class="price__TP">0 ТР</div>
+                  </div>
+                </div>
+                <div class="cart-form__button open-delivery">Make order</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery">
+      <div class="delivery__container">
+        <div class="delivery__content">
+          <div class="delivery__header">
+            <div class="delivery__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="delivery__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="delivery__body">
+            <div class="delivery-form">
+              <div class="delivery-form__header">
+                <h3 class="delivery-form__title">Cart</h3>
+                <p class="delivery-form__description">
+                  Choose your payment and shipping method
+                </p>
+                <div class="delivery-form__navigation delivery-navigation">
+                  <div
+                    paymentType="fullPay"
+                    class="delivery-navigation__button active"
+                  >
+                    Full payment
+                  </div>
+                  <div
+                    paymentType="halfPay"
+                    class="delivery-navigation__button"
+                  >
+                    Partial payment
+                  </div>
+                  <div
+                    paymentType="bonuses"
+                    class="delivery-navigation__button"
+                  >
+                    Payment with bonuses
+                  </div>
+                </div>
+              </div>
+              <div class="delivery-form__body form-body">
+                <p class="form-body__info">
+                  With full payment discount <span>-50₴</span>
+                </p>
+                <div class="form-body__main body-main">
+                  <div class="body-main__name-input">
+                    <label for="delivery-name"
+                      >Your last name, first name and patronymic</label
+                    >
+                    <input
+                      placeholder="Konstantinenko Konstantin Konstantinovich"
+                      type="text"
+                      name="name"
+                      id="delivery-name"
+                    />
+                  </div>
+                  <div class="body-main__name-input">
+                    <label for="delivery-email">Email</label>
+                    <input
+                      placeholder="email@mail.com"
+                      type="email"
+                      name="emain"
+                      id="delivery-email"
+                    />
+                  </div>
+
+                  <div class="body-main__grid">
+                    <div class="body-main__input-block body-main__city-input">
+                      <label for="delivery-city">City</label>
+                      <input
+                        placeholder="Lviv"
+                        type="text"
+                        name="city"
+                        id="delivery-city"
+                      />
+                    </div>
+                    <div class="body-main__input-block body-main__post-input">
+                      <label for="delivery-post"
+                        >Branch number / parcel locker</label
+                      >
+                      <input
+                        placeholder="1002393"
+                        type="number"
+                        name="postalcode"
+                        id="delivery-post"
+                      />
+                    </div>
+                    <div class="body-main__input-block body-main__phone-input">
+                      <label for="delivery-phone"
+                        >Recipient's phone number</label
+                      >
+                      <input
+                        placeholder="+38 000 000 00 00"
+                        type="tel"
+                        name="phone"
+                        id="delivery-phone"
+                      />
+                    </div>
+                    <div class="body-main__input-block">
+                      <label for="delivery-whose">Who will you come to?</label>
+                      <div class="delivery-form__whose-block whose-block">
+                        <div
+                          present="false"
+                          class="whose-block__button whose-block__button-own active"
+                        >
+                          Yourself
+                        </div>
+                        <div
+                          present="true"
+                          class="whose-block__button whose-block__button-present"
+                        >
+                          For a gift
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery-form__footer">
+                <div class="delivery-form__full-price">
+                  <p>To pay</p>
+                  <span>88 888 ₴ </span>
+                </div>
+                <div class="delivery-form__confidentiality">
+                  <input type="checkbox" id="confidentiality-checkbox" />
+                  <p>
+                    I have read and understood the
+                    <a target="_blank" href="/files/docs/oferta.pdf">
+                      public offer</a
+                    >
+                    and
+                    <a target="_blank" href="/files/docs/confidencial.pdf">
+                      privacy policy</a
+                    >
+                  </p>
+                </div>
+                <div class="delivery-form__pay-button__wrapper">
+                  <div class="delivery-form__pay-button">GO TO PAYMENT</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wheel">
+      <div class="wheel__container">
+        <div class="wheel__content">
+          <div class="wheel__header">
+            <div class="wheel__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="wheel__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="wheel__body">
+            <div class="wheel__form form-wheel">
+              <h3 class="form-wheel__title">The Wheel of Fortune</h3>
+              <p class="form-wheel__description">&nbsp;</p>
+              <div class="form-wheel__block">
+                <div level="2" class="wheel-of-fortune"></div>
+              </div>
+              <div class="form-wheel__buttons wheel-buttons">
+                <div class="wheel-buttons__bet wheel-bet">
+                  <div class="wheel-bet__button wheel-bet__button-less">-</div>
+                  <div class="wheel-bet__sum">
+                    <p>1000</p>
+                    <span>TP</span>
+                  </div>
+                  <div class="wheel-bet__button wheel-bet__button-more">+</div>
+                </div>
+                <div class="wheel-buttons__start-button">Twist</div>
+              </div>
+              <div class="form-wheel__navigation wheel-navigation">
+                <p class="wheel-navigation__text">Choose another game option</p>
+                <div class="wheel-navigation__modes wheel-modes">
+                  <div level="1" class="wheel-modes__item level-1 active">
+                    <img src="img/4-sectors-wheel.png" alt="" />
+                  </div>
+                  <div level="2" class="wheel-modes__item level-2">
+                    <img src="img/6-sectors-wheel.png" alt="" />
+                  </div>
+                  <div level="3" class="wheel-modes__item level-3">
+                    <img src="img/8-sectors-wheel.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="win-popup">
+                <div class="win-popup__wrapper">
+                  <h4 class="win-popup__title">WIN!</h4>
+                  <div class="win-popup__body win-body">
+                    <p class="win-body__text">Your gift:<br /></p>
+                    <p class="win-body__description"></p>
+                  </div>
+                  <div class="win-popup__button">Collect</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery-info">
+      <div class="delivery-info__container">
+        <div class="delivery-info__content">
+          <div class="delivery-info__header">
+            <div class="delivery-info__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="delivery-info__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="delivery-info__body">
+            <div class="delivery-info__form delivery-info-form">
+              <h3 class="delivery-info-form__title">Shipping & Payment</h3>
+              <p class="delivery-info-form__info">
+                We ship on the day of order.
+              </p>
+              <p class="delivery-info-form__text">
+                Partial or full amount of the order is paid by the buyer
+                immediately under Order time on the site.
+              </p>
+              <p class="delivery-info-form__text">
+                <span
+                  >The amount of partial prepayment will be deducted from the
+                  total amount of your order!
+                </span>
+              </p>
+              <p class="delivery-info-form__text">
+                Delivery throughout Ukraine is carried out by Nova Poshta.
+              </p>
+              <h4 class="delivery-info-form__thanks">
+                Thank you for being with us!
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order">
+      <div class="order__container">
+        <div class="order__content">
+          <div class="order__header">
+            <div class="order__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="order__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="order__body">
+            <div class="order__form form-order">
+              <h3 class="form-order__title">Order placed</h3>
+              <p class="form-order__number">№2345243234</p>
+              <p class="form-order__text">
+                Some brief description of what came to the phone or e-mail
+                Confirmation and approximate delivery time
+              </p>
+              <h4 class="form-order__glory">Glory to Ukraine!</h4>
+              <div class="form-order__glory-button">GLORY TO HEROES!</div>
+              <div class="form-order__discount-block discount-block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat">
+      <div class="chat__container">
+        <div class="chat__content">
+          <div class="chat__header">
+            <div class="chat__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="chat__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="chat__body">
+            <div class="chat-form">
+              <h3 class="chat-form__title">Support chat</h3>
+              <div class="chat-form__body chat-body">
+                <div class="chat-body__message chat-message admin-message">
+                  <p class="chat-message__name">Bot-helper</p>
+                  <p class="chat-message__text">
+                    Congratulations, my friend! 👋 What questions do you have
+                    for me? Ask not She'm ashamed, I'm here specifically for
+                    this. P.S don't forget to include your
+                    Viber/Telegram/WhatsApp so that we can contact you ;)
+                  </p>
+                </div>
+              </div>
+              <div class="chat-form__navigation chat-navigation">
+                <div class="chat-navigation__inputs">
+                  <input
+                    placeholder="Please provide your Viber/Telegram/WhatsApp contact."
+                    type="text"
+                    class="contacts-input"
+                  />
+                  <input
+                    placeholder="Your message"
+                    type="text"
+                    class="message-input"
+                  />
+                </div>
+                <div class="chat-navigation__button">
+                  <img src="img/send.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="message-popup" class="messages-popup"></div>
+
+    <div class="exchange-and-return">
+      <div class="exchange-and-return__container">
+        <div class="exchange-and-return__content">
+          <div class="exchange-and-return__header">
+            <div class="exchange-and-return__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="exchange-and-return__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="exchange-and-return__body">
+            <div class="exchange-and-return__form exchange-and-return-form">
+              <h3 class="exchange-and-return-form__title">
+                Exchange and Returns
+              </h3>
+
+              <p class="exchange-and-return-form__text">
+                The buyer has the right to return or exchange a product of
+                proper quality if the product did not satisfy them in terms of
+                form, dimensions, style, color, size, or for other reasons
+                preventing its intended use.
+              </p>
+              <p class="exchange-and-return-form__text">
+                The buyer has the right to return or exchange a product of
+                proper quality within 14 days, excluding the day of purchase.
+              </p>
+              <p class="exchange-and-return-form__text">
+                Delivery throughout Ukraine is carried out by Nova Poshta (New
+                Post).
+              </p>
+              <p class="exchange-and-return-form__text">
+                Return or exchange of a product of proper quality is possible if
+                it hasn't been used and if its original appearance, consumer
+                properties, packaging, seals, labels, and the payment document
+                issued to the buyer for the product purchase are preserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts-popup">
+      <div class="contacts-popup__container">
+        <div class="contacts-popup__content">
+          <div class="contacts-popup__header">
+            <div class="contacts-popup__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="contacts-popup__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="contacts-popup__body">
+            <div class="contacts-popup__form contacts-popup-form">
+              <h3 class="contacts-popup-form__title">Contacts</h3>
+              <p class="contacts-popup-form__text">
+                Phone number:
+                <a href="tel:+380635909734">+380635909734</a>
+              </p>
+              <p class="contacts-popup-form__text">
+                Email:
+                <a href="mailto:tomprimefigurines@gmail.com"
+                  >tomprimefigurines@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="failed-paiment">
+      <div class="failed-paiment__container">
+        <div class="failed-paiment__content">
+          <div class="failed-paiment__header">
+            <div class="failed-paiment__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="failed-paiment__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="failed-paiment__body">
+            <div class="failed-paiment__form failed-paiment-form">
+              <div class="failed-paiment__block">
+                <img
+                  src="img/card-remove.png"
+                  alt=""
+                  class="failed-paiment__img"
+                />
+                <p class="failed-paiment__text">Oops, something went wrong!</p>
+              </div>
+              <div class="failed-paiment__button">try again</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="success-paiment">
+      <div class="success-paiment__container">
+        <div class="success-paiment__content">
+          <div class="success-paiment__header">
+            <div class="success-paiment__back button-back-popup">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 20L8.56957 13.4141C7.81014 12.6364 7.81014 11.3636 8.56957 10.5859L15 4"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="success-paiment__close button-close-popup">
+              <div class="button-close-popup__line"></div>
+              <div class="button-close-popup__line"></div>
+            </div>
+          </div>
+          <div class="success-paiment__body">
+            <div class="success-paiment__form success-paiment-form">
+              <div class="success-paiment__block">
+                <img
+                  src="img/wallet-check.png"
+                  alt=""
+                  class="success-paiment__img"
+                />
+                <p class="success-paiment__text">The payment was successful!</p>
+              </div>
+              <div class="success-paiment__button">on the main</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <main>
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__content">
+              <div class="hero__text-block">
+                <h2 class="hero__title">
+                  Symbols, <br />
+                  understood without words
+                </h2>
+                <div class="hero__description">
+                  <span>Hinged decoration</span> in your car
+                </div>
+                <button class="hero__button login-first">
+                  <img src="img/shopping-bag.png" alt="" />
+                  <p>Purchase</p>
+                </button>
+              </div>
+
+              <div class="slider-block__slider swiper">
+                <div class="slider-block__slider-wrapper swiper-wrapper">
+                  <div
+                    articulus="00002"
+                    class="slider-block__slide slider-slide swiper-slide"
+                  >
+                    <div class="slider-slide__image kraisler-image">
+                      <img src="img/kraisler-nobg.png" alt="" />
+                    </div>
+                    <div class="slider-slide__circle">
+                      <img src="img/active-circle.png" alt="" />
+                    </div>
+                    <div class="slider-slide__label">
+                      <img src="img/slide-label-500.png" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    articulus="00001"
+                    class="slider-block__slide slider-slide swiper-slide swiper-slide-active"
+                  >
+                    <div class="slider-slide__image">
+                      <img src="img/slider-putler-nobg.png" alt="" />
+                    </div>
+                    <div class="slider-slide__circle">
+                      <img src="img/active-circle.png" alt="" />
+                    </div>
+                    <div class="slider-slide__label">
+                      <img src="img/slide-label-700.png" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    articulus="00003"
+                    class="slider-block__slide slider-slide swiper-slide"
+                  >
+                    <div class="slider-slide__text"><span>Soon!</span></div>
+                    <div class="slider-slide__label">
+                      <img src="img/slide-label-unknown.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slider-block__slider-button swiper-button-prev slider-block__slider-button-prev"
+                >
+                  <img src="img/slider-prev.png" alt="" />
+                </div>
+                <div
+                  class="slider-block__slider-button swiper-button-next slider-block__slider-button-next"
+                >
+                  <img src="img/slider-next.png" alt="" />
+                </div>
+                <div class="slider-block__instruction">
+                  <img src="img/arrow-rotate-360.png" alt="pulter" />
+                  <p>
+                    Wait for the model to load, click on it and pull cursor to
+                    the side.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__socials-block socials-block">
+            <a
+              href="https://www.instagram.com/tomprimefigurines/"
+              target="_blank"
+              class="socials-block__item"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.4955 7.5H17.5045"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://t.me/tomprimefigurines"
+              target="_blank"
+              class="socials-block__item"
+            >
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.33997 4.24525L13.9439 1.37789C17.805 0.0911245 19.9028 2.19858 18.6259 6.05888L15.7579 14.661C13.8324 20.4463 10.6706 20.4463 8.74506 14.661L7.89379 12.1077L5.33997 11.2566C-0.446657 9.33152 -0.446657 6.18047 5.33997 4.24525Z"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 12L12 8"
+                  stroke="#F4F4F4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.tiktok.com/@tomprimefigurines"
+              target="_blank"
+              class="socials-block__item item-tt"
+            >
+              <?xml version="1.0" encoding="utf-8"?>
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+              >
+                <path
+                  fill="#fff"
+                  d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="partners-block-wrapper">
+            <ul class="footer__partners-block partners-block">
+              <li class="partners-block__item">
+                <img src="img/portmone.png" alt="" />
+              </li>
+              <li class="partners-block__item">
+                <img src="img/mastercard.png" alt="" />
+              </li>
+              <li class="partners-block__item">
+                <img src="img/visa.png" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation-languange navigation-language">
+            <div class="navigation-language__button">
+              <a href="index.html">Укр</a>
+            </div>
+            <div class="navigation-language__border"></div>
+            <div class="navigation-language__button active">
+              <a href="index-eng.html ">Eng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="page-decor">
+      <div class="page-decor__item page-decor__item-1">
+        <img src="img/decor1.png" alt="" />
+      </div>
+      <div class="page-decor__item page-decor__item-2">
+        <img src="img/decor2.png" alt="" />
+      </div>
+      <div class="page-decor__item page-decor__item-3">
+        <img src="img/decor3.png" alt="" />
+      </div>
+      <div class="page-decor__item page-decor__item-4">
+        <img src="img/decor4.png" alt="" />
+      </div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+          "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+          "RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js",
+          "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as THREE from "three";
+      import { OrbitControls } from "OrbitControls";
+      import { GLTFLoader } from "GLTFLoader";
+      import { RectAreaLightHelper } from "RectAreaLightHelper";
+      import { RectAreaLightUniformsLib } from "RectAreaLightUniformsLib";
+
+      let hero = document.querySelector(".hero");
+      let heroSwiper = hero.querySelector(".slider-block__slider");
+      let heroButtonPrew = heroSwiper.querySelector(
+        ".slider-block__slider-button-prev"
+      );
+      let heroButtonNext = heroSwiper.querySelector(
+        ".slider-block__slider-button-next"
+      );
+      let container = document.querySelector(".swiper-slide-active");
+      let containerModel = container.querySelector("canvas");
+      let scene = null;
+      let camera = null;
+      let renderer = null;
+      let controls = null;
+      let timeouts = [];
+      heroButtonPrew.addEventListener("click", function () {
+        if (scene != null) {
+          removeScene();
+        }
+        timeouts.forEach((timeout) => {
+          window.clearTimeout(timeout);
+        });
+        let timeout = setTimeout(() => {
+          try {
+            init();
+          } catch (error) {
+            console.log(error);
+          }
+        }, 920);
+        timeouts.push(timeout);
+      });
+      heroButtonNext.addEventListener("click", function () {
+        if (scene != null) {
+          removeScene();
+        }
+        timeouts.forEach((timeout) => {
+          window.clearTimeout(timeout);
+        });
+        let timeout = setTimeout(() => {
+          try {
+            init();
+          } catch (error) {
+            console.log(error);
+          }
+        }, 920);
+        timeouts.push(timeout);
+      });
+      let isAnimating = false;
+      function removeScene() {
+        if (scene) {
+          let heroSwiper = hero.querySelector(".slider-block__slider");
+          let swiperSlides = heroSwiper.querySelectorAll(
+            ".slider-block__slide"
+          );
+          swiperSlides.forEach((swiperSlide) => {
+            let sceneCanvases = swiperSlide.querySelectorAll("canvas");
+            if (sceneCanvases.length > 0) {
+              if (swiperSlide) {
+                sceneCanvases.forEach((sceneCanvas) => {
+                  swiperSlide.removeChild(sceneCanvas);
+                });
+              }
+            }
+          });
+          // let sceneCanvas = container.querySelector("canvas");
+          // container.removeChild(sceneCanvas);
+          scene = null;
+          camera = null;
+          renderer = null;
+          controls = null;
+        }
+      }
+
+      function init() {
+        let sliderItems = document.querySelectorAll(".slider-block__slide");
+        sliderItems.forEach((slide) => {
+          if (slide.classList.contains("swiper-slide-active")) {
+            // slide.innerHTML += `fdsfsdf`;
+            let existingCanvase = slide.querySelector("canvas");
+            if (existingCanvase) {
+              return;
+            }
+
+            container = slide;
+          }
+        });
+
+        if (
+          container.getAttribute("articulus") == "00001" ||
+          container.getAttribute("articulus") == "00002"
+        ) {
+          containerModel = container.querySelector("canvas");
+
+          //Scene
+          scene = new THREE.Scene();
+
+          //Camera
+          camera = new THREE.PerspectiveCamera(
+            75,
+            container.clientWidth / container.clientHeight,
+            0.1,
+            10000
+          );
+
+          // select model
+          if (container.getAttribute("articulus") == "00001") {
+            camera.position.set(500, 100, 800);
+            // camera.position.set(500, 100, 800);
+          } else if (container.getAttribute("articulus") == "00002") {
+            // camera.position.set(0, 0, 25);
+            // camera.position.set(-15, 5, 20);
+            camera.position.set(-12.7, 5, -20);
+          }
+
+          //render
+          renderer = new THREE.WebGLRenderer({ antialias: true });
+          renderer.setSize(container.clientWidth, container.clientHeight);
+          renderer.setClearColor(0x000000, 0);
+          // вставка модели на сцену
+
+          // Model
+          {
+            const loader = new GLTFLoader();
+            if (container.getAttribute("articulus") == "00001") {
+              loader.load(
+                "./files/models/putler-model/putin_with_rope.gltf",
+                (gltf) => {
+                  if (scene) {
+                    scene.add(gltf.scene);
+                    gltf.scene.position.set(-15, 150, 0);
+                    gltf.scene.scale.set(1.6, 1.6, 1.6);
+                    // проверка или слайд уже есть
+                    let existingCanvases = container.querySelectorAll("canvas");
+                    if (existingCanvases.length > 0) {
+                      existingCanvases.forEach((canvas) => {
+                        canvas.remove();
+                      });
+                    }
+                    container.appendChild(renderer.domElement);
+                  }
+                },
+                function (error) {
+                  console.log("Error: " + error);
+                }
+              );
+            } else if (container.getAttribute("articulus") == "00002") {
+              loader.load(
+                "./files/models/ship-model/kraisler.gltf",
+                (gltf) => {
+                  if (scene) {
+                    scene.add(gltf.scene);
+                    // gltf.scene.position.set(-3.75, 2.4, 0);
+                    gltf.scene.position.set(-2, 2.15, 0);
+                    // gltf.scene.position.set(-3.9, 2.2, -3.2);
+                    gltf.scene.scale.set(1.2, 1.2, 1.2);
+                    let existingCanvases = container.querySelectorAll("canvas");
+                    if (existingCanvases.length > 0) {
+                      existingCanvases.forEach((canvas) => {
+                        canvas.remove();
+                      });
+                    }
+                    container.appendChild(renderer.domElement);
+                  }
+                },
+                function (error) {
+                  console.log("Error: " + error);
+                }
+              );
+            }
+          }
+
+          {
+            if (container.getAttribute("articulus") == "00001") {
+              const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+              scene.add(ambientLight);
+            } else if (container.getAttribute("articulus") == "00002") {
+              const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
+              scene.add(ambientLight);
+            }
+          }
+
+          {
+            const light = new THREE.DirectionalLight(0xffffff, 1);
+            light.position.set(-2, 0, 10);
+            light.lookAt(0, -1, 0);
+            scene.add(light);
+            // Helper;
+            // const helper = new THREE.DirectionalLightHelper(light, 1);
+            // scene.add(helper);
+          }
+
+          {
+            const light = new THREE.DirectionalLight(0xffffff, 0.1);
+            light.position.set(2, 0, 5);
+            light.lookAt(0, 1, 0);
+            scene.add(light);
+            // Helper;
+            // const helper = new THREE.DirectionalLightHelper(light, 1);
+            // scene.add(helper);
+          }
+
+          RectAreaLightUniformsLib.init();
+          {
+            const rectLight = new THREE.RectAreaLight(0xffffff, 0.5, 100, 100);
+            if (container.getAttribute("articulus") == "00001") {
+              const rectLight = new THREE.RectAreaLight(0xffffff, 1, 100, 100);
+            } else if (container.getAttribute("articulus") == "00002") {
+              const rectLight = new THREE.RectAreaLight(
+                0xffffff,
+                0.5,
+                100,
+                100
+              );
+            }
+            rectLight.position.set(-10, 0, 0);
+            rectLight.rotation.y = Math.PI + Math.PI / 4;
+            scene.add(rectLight);
+          }
+
+          {
+            const rectLight = new THREE.RectAreaLight(0xffffff, 1, 100, 100);
+            rectLight.position.set(10, 0, 0);
+            rectLight.rotation.y = Math.PI - Math.PI / 4;
+            scene.add(rectLight);
+          }
+
+          //OrbitControls
+          controls = new OrbitControls(camera, renderer.domElement);
+          controls.enableDamping = true;
+          controls.autoRotate = true; // Включаем автоматическое вращение
+          controls.autoRotateSpeed = 3; // Задаем скорость вращения
+          controls.enableZoom = false;
+          controls.enablePan = false;
+
+          //Resize
+          window.addEventListener("resize", onWindowResize, false);
+
+          function onWindowResize() {
+            let slide = document.querySelector(".slider-block__slide");
+            camera.aspect = slide.clientWidth / slide.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(slide.clientWidth, slide.clientHeight);
+          }
+
+          // Animate
+          // function animate() {
+          //   requestAnimationFrame(animate);
+          //   if (controls) {
+          //     controls.update();
+          //   }
+          //   if (scene) {
+          //     renderer.render(scene, camera);
+          //   }
+          // }
+          // animate();
+          if (!isAnimating) {
+            // Проверка наличия анимации
+            isAnimating = true; // Установка флага перед запуском анимации
+
+            function animate() {
+              requestAnimationFrame(animate);
+              if (controls) {
+                controls.update();
+              }
+              if (scene) {
+                renderer.render(scene, camera);
+              }
+            }
+            animate(); // Запуск анимации только если флаг isAnimating установлен
+          }
+        }
+      }
+      try {
+        init();
+      } catch (error) {
+        console.log(error);
+      }
+    </script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20230711005331"></script>
+    <script src="js/app.min.js?_v=20230711005331"></script>
+  </body>
+</html>
